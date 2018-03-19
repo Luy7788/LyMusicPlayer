@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LyMusicPlayerCDViewTopView">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvn-Nt-j7p" userLabel="right">
+                    <rect key="frame" x="166.5" y="8.5" width="55" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G3-eu-VHi">
+                            <rect key="frame" x="8" y="0.0" width="39" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DK-2y-vdE">
+                            <rect key="frame" x="0.0" y="-0.5" width="55" height="20"/>
+                            <connections>
+                                <action selector="MVBtnClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="0f0-lC-s8f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1DK-2y-vdE" secondAttribute="bottom" id="Aef-km-5nK"/>
+                        <constraint firstAttribute="trailing" secondItem="9G3-eu-VHi" secondAttribute="trailing" constant="8" id="Cg7-UQ-CLn"/>
+                        <constraint firstItem="9G3-eu-VHi" firstAttribute="leading" secondItem="Vvn-Nt-j7p" secondAttribute="leading" constant="8" id="SLu-qp-U51"/>
+                        <constraint firstItem="9G3-eu-VHi" firstAttribute="top" secondItem="Vvn-Nt-j7p" secondAttribute="top" id="aJM-Zf-ULW"/>
+                        <constraint firstItem="1DK-2y-vdE" firstAttribute="leading" secondItem="Vvn-Nt-j7p" secondAttribute="leading" id="btg-3R-MfQ"/>
+                        <constraint firstItem="1DK-2y-vdE" firstAttribute="top" secondItem="Vvn-Nt-j7p" secondAttribute="top" id="kBE-0o-RhO"/>
+                        <constraint firstAttribute="bottom" secondItem="9G3-eu-VHi" secondAttribute="bottom" id="lDD-kP-4bh"/>
+                        <constraint firstAttribute="trailing" secondItem="1DK-2y-vdE" secondAttribute="trailing" id="taG-A2-nbG"/>
+                        <constraint firstAttribute="width" constant="55" id="xPA-9Z-V9b"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9k-EW-ZF2" userLabel="center">
+                    <rect key="frame" x="156.5" y="14" width="10" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KsY-87-owG"/>
+                        <constraint firstAttribute="width" constant="10" id="nG0-bE-ryi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3i6-MM-PJn" userLabel="left">
+                    <rect key="frame" x="100.5" y="8" width="56" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标准" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-Pg-xjP">
+                            <rect key="frame" x="10" y="0.0" width="25" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_dropdown_musicplayer_music" translatesAutoresizingMaskIntoConstraints="NO" id="ufr-QS-NjV">
+                            <rect key="frame" x="35" y="2" width="16" height="16"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQo-dd-47T">
+                            <rect key="frame" x="0.0" y="0.0" width="56" height="20"/>
+                            <connections>
+                                <action selector="KbitBtnClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mqe-cU-FZG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hQ7-Pg-xjP" secondAttribute="bottom" id="26M-Lv-oR6"/>
+                        <constraint firstAttribute="height" constant="20" id="C62-8b-wdE"/>
+                        <constraint firstItem="hQ7-Pg-xjP" firstAttribute="leading" secondItem="3i6-MM-PJn" secondAttribute="leading" constant="10" id="FJ2-c0-7b2"/>
+                        <constraint firstAttribute="bottom" secondItem="mQo-dd-47T" secondAttribute="bottom" id="ScU-JI-Xnh"/>
+                        <constraint firstItem="hQ7-Pg-xjP" firstAttribute="top" secondItem="3i6-MM-PJn" secondAttribute="top" id="VS8-iS-3h3"/>
+                        <constraint firstItem="mQo-dd-47T" firstAttribute="top" secondItem="3i6-MM-PJn" secondAttribute="top" id="cdu-fl-4ll"/>
+                        <constraint firstAttribute="trailing" secondItem="ufr-QS-NjV" secondAttribute="trailing" constant="5" id="dXO-IN-Hg1"/>
+                        <constraint firstItem="mQo-dd-47T" firstAttribute="leading" secondItem="3i6-MM-PJn" secondAttribute="leading" id="iiI-A7-m9e"/>
+                        <constraint firstItem="ufr-QS-NjV" firstAttribute="leading" secondItem="hQ7-Pg-xjP" secondAttribute="trailing" id="phF-2M-7BJ"/>
+                        <constraint firstAttribute="trailing" secondItem="mQo-dd-47T" secondAttribute="trailing" id="pjP-0D-OWa"/>
+                        <constraint firstItem="ufr-QS-NjV" firstAttribute="centerY" secondItem="3i6-MM-PJn" secondAttribute="centerY" id="wMi-01-O7m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Vvn-Nt-j7p" firstAttribute="leading" secondItem="a9k-EW-ZF2" secondAttribute="trailing" id="VFe-gO-aYx"/>
+                <constraint firstItem="Vvn-Nt-j7p" firstAttribute="height" secondItem="3i6-MM-PJn" secondAttribute="height" id="WPD-Hl-QT7"/>
+                <constraint firstItem="a9k-EW-ZF2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WTf-ej-PMI"/>
+                <constraint firstItem="a9k-EW-ZF2" firstAttribute="leading" secondItem="3i6-MM-PJn" secondAttribute="trailing" id="cPh-Li-h7e"/>
+                <constraint firstItem="Vvn-Nt-j7p" firstAttribute="centerY" secondItem="3i6-MM-PJn" secondAttribute="centerY" id="eYu-5e-VcI"/>
+                <constraint firstItem="a9k-EW-ZF2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rYb-G1-IxO"/>
+                <constraint firstItem="3i6-MM-PJn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="xFd-gF-cYe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="KbitButton" destination="mQo-dd-47T" id="OYP-XD-RUJ"/>
+                <outlet property="KbitContentView" destination="3i6-MM-PJn" id="h7S-Ld-SLK"/>
+                <outlet property="KbitLabel" destination="hQ7-Pg-xjP" id="jLP-Mf-deV"/>
+                <outlet property="mvButton" destination="1DK-2y-vdE" id="SDC-ey-hBP"/>
+                <outlet property="mvContentView" destination="Vvn-Nt-j7p" id="Fev-O1-1X8"/>
+                <outlet property="mvLabel" destination="9G3-eu-VHi" id="IgA-B8-e6v"/>
+            </connections>
+            <point key="canvasLocation" x="-247.5" y="75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_dropdown_musicplayer_music" width="16" height="16"/>
+    </resources>
+</document>

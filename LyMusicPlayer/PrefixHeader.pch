@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  LyMusicPlayer
+//
+//  Created by Lying on 2018/3/10.
+//  Copyright © 2018年 Ly. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+//音乐播放工具
+#import "LyMusicManager.h"
+#import "UIColor+JY.h"
+#import "UIImage+Extension.h"
+/*===========================自定义宏===========================*/
+#define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
+
+// 宽度比 & 高度比
+#define WIDTH_RATIO         (SCREEN_WIDTH / iphone6_ScreenWidth)
+#define HEIGHT_RATIO        (SCREEN_HEIGHT / iphone6_ScreenHeigh)
+
+// iOS9+   iPhoneX 判断
+#define IS_IPHONE_X         (SCREEN_WIDTH == 375.0f && SCREEN_HEIGHT == 812.0f ? YES : NO)
+
+// 判断是否是4s的宽高比
+#define IS_IPHONE_4S_RATIO  (((SCREEN_WIDTH/SCREEN_HEIGHT) == ((CGFloat)iphone4s_ScreenWidth/iphone4s_ScreenHeight))? YES : NO)
+
+#define SAVE_ARE_TOP        (IS_IPHONE_X ? 24.0f : 0.0f)
+#define SAVE_ARE_BOTTOM     (IS_IPHONE_X ? 34.0f : 0.0f)
+
+/***********屏幕适配*************/
+#define iphone6P_ScreenWidth         414
+#define iphone6_ScreenWidth          375
+#define iphone5_ScreenWidth          320
+#define iphone4s_ScreenWidth         320
+
+#define iphone6P_ScreenHeight        736
+#define iphone6_ScreenHeigh          667
+#define iphone5_ScreenHeigh          568
+#define iphone4s_ScreenHeight        480
+
+#endif /* PrefixHeader_pch */
